@@ -2,4 +2,33 @@
 <h3>{{[{"key":"value...."}] | json}}</h3>
 <h3>{{1500 | number}}</h3>
 <button pButton label="HolaCaraE'bolaXD" icon="pi pi-check" iconPos="left" class="p-button-warning"></button>
-<p-button label="HolaCaraE'bolaXD" icon="pi pi-check" iconPos="left"></p-button>
+<p-button label="HolaCaraE'bolaXD" icon="pi pi-check" iconPos="left" styleClass="p-button-warning"></p-button>
+<br>
+<p-card>
+  <p-header>Header</p-header>
+  content
+  <p-footer>Footer</p-footer>
+</p-card>
+
+<br>
+
+<p-card [header]="'hEader card' | titlecase" subheader="SubHeader" >
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatum commodi ipsum quas, architecto nisi aut incidunt culpa iure.
+</p-card>
+
+<br>
+
+<p-card header="Avanced" [style]="{width:'350px'}">
+  <ng-template pTemplate="header">
+    Header Avanced 'img'
+  </ng-template>
+
+  content....
+
+  <ng-template pTemplate="footer">
+    Footer contenet...
+    <p-button label="HolaCaraE'bolaXD" icon="pi pi-check" iconPos="left" styleClass="p-button-warning"></p-button>
+  </ng-template>
+  
+  
+</p-card>

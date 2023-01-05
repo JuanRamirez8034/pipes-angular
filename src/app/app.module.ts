@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 
 // importando los botones del PrimeNG
 import {ButtonModule as primegButtonModule} from 'primeng/button';
+// importando las tarjetas del PrimegNG
+import {CardModule as primegCardModule} from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,8 @@ import {ButtonModule as primegButtonModule} from 'primeng/button';
   ],
   imports: [
     BrowserModule,
-    primegButtonModule
+    primegButtonModule,
+    primegCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
