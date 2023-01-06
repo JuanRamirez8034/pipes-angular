@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import {ButtonModule as primegButtonModule} from 'primeng/button';
 // importando las tarjetas del PrimegNG
 import {CardModule as primegCardModule} from 'primeng/card';
+// importando el menuBar del PrimegNG
+import {MenubarModule} from 'primeng/menubar';
 
 
 
@@ -10,7 +12,8 @@ import {CardModule as primegCardModule} from 'primeng/card';
   declarations: [],
   exports: [
     primegButtonModule,
-    primegCardModule
+    primegCardModule,
+    MenubarModule
   ]
 })
 export class PrimegExportsModule { }

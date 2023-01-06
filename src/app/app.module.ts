@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRouterModule } from './app-router.module';
 
 import { AppComponent } from './app.component';
-// modulo que contiene los comopentes de primeNG
-import { PrimegExportsModule } from './primeg-exports/primeg-exports.module';
+
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { PrimegExportsModule } from './primeg-exports/primeg-exports.module';
   ],
   imports: [
     BrowserModule,
-    PrimegExportsModule
+    SharedModule,
+    AppRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
