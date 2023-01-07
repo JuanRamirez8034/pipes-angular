@@ -4,6 +4,7 @@ import { NumbersComponent } from './pages/numbers/numbers.component';
 import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { OrderComponent } from './pages/order/order.component';
+import { PrimegExportsModule } from '../primeg-exports/primeg-exports.module';
 
 
 
@@ -21,7 +22,8 @@ import { OrderComponent } from './pages/order/order.component';
     OrderComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PrimegExportsModule
   ]
 })
 export class ExamplesPipesModule { }

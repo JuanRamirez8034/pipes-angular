@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   ]
 })
 export class BasicsComponent {
-
+  public textExample : string = 'JuAn raMireZ'
+  public Date  : Date = new Date();
 }

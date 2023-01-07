@@ -2,6 +2,7 @@
 html,body{
   background: var(--surface-b);
   font-family: var(--font-family);
+  padding: 5px;
 }
 
 .text-color-primary{

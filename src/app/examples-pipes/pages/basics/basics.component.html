@@ -1,1 +1,79 @@
-<p>basics works!</p>
+<div class="text-color-primary mt-2">
+  <h2>Basics pipes</h2>
+  <br>
+  <p>Angular Basics pipes - include in Common Module</p>
+</div>
+
+<!-- clases provenientes de primeng (solo son de PrimeFlex) -->
+<div class="grid mt-3">
+  <div class="md:col-4">
+
+    <p-card header="UpperCase Pipe" [subheader]="'ORG. Case -> ' + textExample">
+      <b>Pipe</b> -> uppercase
+      <br>
+      <b>Text tranform</b> : "{{textExample | uppercase}}"
+    </p-card>
+
+  </div>
+  
+  <div class="md:col-4">
+
+    <p-card header="LowerCase Pipe" [subheader]="'ORG. Case -> ' + textExample">
+      <b>Pipe</b> -> lowercase
+      <br>
+      <b>Text tranform</b> : "{{textExample | lowercase}}"
+    </p-card>
+    
+  </div>
+
+  <div class="md:col-4">
+
+    <p-card header="TitleCase Pipe" [subheader]="'ORG. Case -> ' + textExample">
+      <b>Pipe</b> -> titlecase
+      <br>
+      <b>Text tranform</b> : "{{textExample | titlecase}}"
+    </p-card>
+    
+  </div>
+</div>
+
+<!-- ------------ -->
+
+<div class="text-color-primary mt-4">
+  <h2>Date pipes</h2>
+  <br>
+  <p>Angular date pipes - include in Common Module</p>
+</div>
+
+<!-- clases provenientes de primeng (solo son de PrimeFlex) -->
+<div class="grid mt-3">
+  <div class="md:col-6">
+
+    <p-card styleClass="px-2" header="Demo Date Pipe">
+      <ul>
+        <li>Date</li>
+        <li>Date | date</li>
+        <li>Date | date : 'short'</li>
+        <li>Date | date : 'long'</li>
+        <li>Date | date : 'dd/MM/yyyy HH:mm:ss'</li>
+        <li>Date | date : 'EEEE, dd, MMMM, yyyy hh:mm:ss a'</li>
+      </ul>
+    </p-card>
+
+  </div>
+  
+  <div class="md:col-6">
+
+    <p-card styleClass="px-2" header="Result Date pipe">
+      <ul>
+        <li>{{Date}}</li>
+        <li>{{Date | date}}</li>
+        <li>{{Date | date:'short'}}</li>
+        <li>{{Date | date:'long'}}</li>
+        <li>{{Date | date : 'dd/MM/yyyy HH:mm:ss'}}</li>
+        <li>{{Date | date : 'EEEE, dd, MMMM, yyyy hh:mm:ss a'}}</li>
+      </ul>
+    </p-card>
+
+  </div>
+</div>
