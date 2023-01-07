@@ -1,1 +1,50 @@
-<p>numbers works!</p>
+<div class="text-color-primary">
+  <h1>Number pipes</h1>
+  <br>
+  <p>Angular Decimal pipes - include in Common Module</p>
+</div>
+
+<div class="grid mt-3">
+  <div class="lg:col-6 sm:col-12">
+    <p-card header="Decimal Pipe" subheader="ORG. number: {{number1}}" styleClass="px-2">
+      <ul>
+        <li><b>{{number1 | number}}</b> <br>-> Pipe conf: number1 | number</li>
+        <li><b>{{number1 | number : '2.4-4'}}</b> <br>-> Pipe conf: number1 | number : '2.4-4'</li>
+        <li><b>{{number1 | number : '2.0-1'}}</b> <br>-> Pipe conf: number1 | number : '2.0-1'</li>
+        <li><b>{{number1 | number : '2.0-0'}}</b> <br>-> Pipe conf: number1 | number : '2.0-0'</li>
+        <li><b>{{number1 | number : '' : 'fr'}}</b> <br>-> Pipe conf: number1 | number : '' : 'fr'</li>
+        <li><b>{{number1 | number : '' : 'en'}}</b> <br>-> Pipe conf: number1 | number : '' : 'en'</li>
+        <li><b>{{number1 | number : '2.3-3' : 'en'}}</b> <br>-> Pipe conf: number1 | number : '2.3-3' : 'en'</li>
+      </ul>
+    </p-card>
+  </div>
+
+  
+  <div class="lg:col-6 sm:col-12">
+    <p-card header="Currency Pipe" subheader="ORG. number: {{number1}}" styleClass="px-2">
+      <ul>
+        <li><b>{{number1 | currency}}</b> <br>-> Pipe conf: number1 | currency</li>
+        <li><b>{{number1 | currency : '$'}}</b> <br>-> Pipe conf: number1 | currency : '$'</li>
+        <li><b>{{number1 | currency : 'Bs.'}}</b> <br>-> Pipe conf: number1 | currency : 'Bs.'</li>
+        <li><b>{{number1 | currency : 'USD' : 'symbol-narrow'}}</b> <br>-> Pipe conf: number1 | currency : 'USD' : 'symbol-narrow'</li>
+        <li><b>{{number1 | currency : 'USD' : 'symbol-narrow' : '1.4-4'}}</b> <br>-> Pipe conf: number1 | currency : 'USD' : 'symbol-narrow' : '1.4-4'</li>
+        <li><b>{{number1 | currency : 'USD' : 'symbol-narrow' : '1.4-4' : 'en'}}</b> <br>-> Pipe conf: number1 | currency : 'USD' : 'symbol-narrow' : '1.4-4' : 'en'</li>
+        <li><b>{{number1 | currency : 'USD' : 'symbol-narrow' : '1.3-3' : 'fr'}}</b> <br>-> Pipe conf: number1 | currency : 'USD' : 'symbol-narrow' : '1.3-3' : 'fr'</li>
+      </ul>
+    </p-card>
+  </div>
+  
+  
+  <div class="lg:col-6 sm:col-12">
+    <p-card header="Percentaje Pipe" subheader="ORG. number: {{number2}}" styleClass="px-2">
+      <ul>
+        <li><b>{{number2 | percent}}</b> <br>-> Pipe conf: number1 | percent</li>
+        <li><b>{{number2 | percent : '1.0-2'}}</b> <br>-> Pipe conf: number1 | percent : '1.0-2'</li>
+        <li><b>{{number2 | percent : '1.0-4'}}</b> <br>-> Pipe conf: number1 | percent : '1.0-4'</li>
+        <li><b>{{number2 | percent : '1.0-2' : 'fr'}}</b> <br>-> Pipe conf: number1 | percent : '1.0-2' : 'fr'</li>
+        <li><b>{{number2 | percent : '1.0-2' : 'en'}}</b> <br>-> Pipe conf: number1 | percent : '1.0-2' : 'en'</li>
+      </ul>
+    </p-card>
+  </div>
+
+</div>
