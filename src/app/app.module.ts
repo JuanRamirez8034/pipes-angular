@@ -9,8 +9,10 @@ import { SharedModule } from './shared/shared.module';
 
 // configuracion para cambiar el idioma por defecto
 import myPrefLenuaje from '@angular/common/locales/es-VE'; // 1. imoportar el lenguaje de preferencia
+import myFrechLenguaje from '@angular/common/locales/fr';
 import { registerLocaleData } from '@angular/common';      // 2. importar la funcion que se encarga de realizar el cambio
 registerLocaleData(myPrefLenuaje);                         // 3. Ejecutar la funcion pasandole el lenguaje
+registerLocaleData(myFrechLenguaje);
                                                            // 4. Para cambiar el lenguaje de forma global se debe agregar una configuracion en los providers
 
 @NgModule({
