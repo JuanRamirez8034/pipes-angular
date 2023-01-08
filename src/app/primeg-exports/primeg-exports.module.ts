@@ -5,7 +5,8 @@ import {ButtonModule as primegButtonModule} from 'primeng/button';
 import {CardModule as primegCardModule} from 'primeng/card';
 // importando el menuBar del PrimegNG
 import {MenubarModule} from 'primeng/menubar';
-
+// importando el fieldList del PrimegNG
+import {FieldsetModule} from 'primeng/fieldset';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import {MenubarModule} from 'primeng/menubar';
   exports: [
     primegButtonModule,
     primegCardModule,
-    MenubarModule
+    MenubarModule,
+    FieldsetModule
   ]
 })
 export class PrimegExportsModule { }

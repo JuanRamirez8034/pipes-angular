@@ -1,1 +1,91 @@
-<p>no-commons works!</p>
+<div class="text-color-primary mt-2">
+  <h2>Uncommon pipes</h2>
+  <br>
+  <p>Angular not common pipes - include in Common Module</p>
+</div>
+
+<div class="grid mt-2">
+  <div class="sm:col-12 lg:col-6">
+    <p-fieldset legend="I18nSelect Pipe" [collapsed]="false" [toggleable]="true" [transitionOptions]="'500ms'">
+      <p>Hi, {{gender | i18nSelect : mapGender}} {{name}}. How are you? <br><span class="text-color-secondary">Hi, Var_gender | i18nSelect : object_mapGender var_name. How are you?</span></p>
+      <button pButton label="Change" iconPos="left" icon="pi pi-history" class="mt-4 p-button-warning" (click)="changeGender();"></button>
+    </p-fieldset>
+  </div>
+  
+  <div class="sm:col-12 lg:col-6">
+    <p-fieldset legend="I18nPlural Pipe" [collapsed]="false" [toggleable]="true" [transitionOptions]="'500ms'">
+      <div class="grid">
+        <div class="col-8">
+          <p>We currently  {{customers.length | i18nPlural : mapPlural}} <br><span class="text-color-secondary">array_customers.length | i18nPlural : object_mapPlural</span></p>
+          <button pButton icon="pi pi-minus" class="mt-3 p-button-raised p-button-rounded p-button-danger mr-2" (click)="chnageCustomers('-')"></button>
+          <button pButton icon="pi pi-plus" class="mt-3 p-button-raised p-button-rounded p-button-success" (click)="chnageCustomers('+')"></button>
+        </div>
+        <div class="col-4">
+          <ul>
+            <li
+              *ngFor="let item of customers"
+            >{{item}}</li>
+          </ul>
+        </div>
+      </div>
+    </p-fieldset>
+  </div>
+
+  <div class="sm:col-12 lg:col-6">
+    <p-fieldset legend="Slice Pipe" [collapsed]="false" [toggleable]="true" [transitionOptions]="'500ms'">
+      <div>
+        ORG. Array <br>
+        <pre>{{'[' + customers + ']'}}</pre>
+      </div>
+      
+      <ul class="ml-4 mt-2">
+        <li>[{{customers | slice : 0}}] <br> <b> -> customers | slice : 0</b></li>
+        <li>[{{customers | slice : 0 : 3}}] <br> <b> -> customers | slice : 0 : 3</b></li>
+        <li>[{{customers | slice : 1 : 3}}] <br> <b> -> customers | slice : 1 : 3</b></li>
+        <li>[{{customers | slice : 3 : 3}}] <br> <b> -> customers | slice : 3 : 3</b></li>
+        <li>[{{customers | slice : 3 : 4}}] <br> <b> -> customers | slice : 3 : 4</b></li>
+        <li>[{{customers[1] | slice : 0 : 4}}] <br> <b> -> customers[1] | slice : 3 : 4</b></li>
+      </ul>
+      
+    </p-fieldset>
+  </div>
+
+  <div class="sm:col-12 lg:col-6">
+    <p-fieldset legend="Json Pipe" [collapsed]="false" [toggleable]="true" [transitionOptions]="'500ms'">
+      <div class="mb-2">
+        ORG. Object <br>
+        <pre>{{myJson}}</pre>
+      </div>
+
+      <pre>{{myJson | json}}</pre>
+      
+    </p-fieldset>
+  </div>
+
+  <div class="sm:col-12 lg:col-6">
+    <p-fieldset legend="KeyValue Pipe" [collapsed]="false" [toggleable]="true" [transitionOptions]="'500ms'">
+      <div>
+        ORG. Object <br>
+        <pre>{{Myobject | json}}</pre>
+      </div>
+      
+      <ul class="ml-4 mt-2">
+        <li *ngFor="let item of Myobject | keyvalue">
+          Index: {{item.key}} -> Value: {{item.value}}
+        </li>
+      </ul>
+      <div>
+        <pre>{{code}}</pre>
+      </div>
+    </p-fieldset>
+  </div>
+
+  <div class="sm:col-12 lg:col-6">
+    <p-fieldset legend="Async Pipe" [collapsed]="false" [toggleable]="true" [transitionOptions]="'500ms'">
+      <span *ngIf="!(myObservable | async)"><b>Solving observable</b></span>
+      <p>{{myObservable | async}}</p>
+      <span *ngIf="!(myPromise | async)"><b>Solving promise</b></span>
+      <p>{{myPromise | async}}</p>
+    </p-fieldset>
+  </div>
+</div>
