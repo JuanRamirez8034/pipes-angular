@@ -1,1 +1,15 @@
-<p>order works!</p>
+<div class="text-color-primary px-1">
+  <h1>Personalized pipes</h1>
+  <p>Pipes created by us</p>
+</div>
+
+<div class="grid mt-3">
+  <div class="md:col-6 sm:col-12">
+    <p-fieldset legend="ToUpperCasePers Pipe" [toggleable]="true" transitionOptions="500ms">
+      <p>{{'THis iS exaMple text' | toUpperCasePers : boooolean}} <br><span class="text-color-secondary">'{{THis iS exaMple text' | toUpperCasePers : boooolean}}</span></p>
+
+      <button pButton label="Toggle uppercase" (click)="toggleUC();" class="p-button p-button-secondary mt-3"></button>
+    </p-fieldset>
+  </div>
+</div>
+

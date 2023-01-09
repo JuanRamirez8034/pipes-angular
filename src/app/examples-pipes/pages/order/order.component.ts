@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class OrderComponent {
 
+  public boooolean : boolean = true;
+
+  public toggleUC(){
+    this.boooolean = !this.boooolean;
+    console.log(this.boooolean);
+    
+  }
+
 }

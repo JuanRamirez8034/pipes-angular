@@ -5,6 +5,7 @@ import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { OrderComponent } from './pages/order/order.component';
 import { PrimegExportsModule } from '../primeg-exports/primeg-exports.module';
+import { TranformToUpperCasePers } from './pipes/tranformToUpperCase.pers.pipe';
 
 
 
@@ -13,7 +14,8 @@ import { PrimegExportsModule } from '../primeg-exports/primeg-exports.module';
     NumbersComponent,
     NoCommonsComponent,
     BasicsComponent,
-    OrderComponent
+    OrderComponent,
+    TranformToUpperCasePers
   ],
   exports: [
     NumbersComponent,

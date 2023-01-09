@@ -34,7 +34,7 @@ export class MenuComponent implements OnInit{
       {
         label:'Personalized',
         icon: PrimeIcons.PALETTE,
-        routerLink: 'pers'
+        routerLink: 'order'
       }
     ];
   }
