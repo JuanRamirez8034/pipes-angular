@@ -7,6 +7,10 @@ import {CardModule as primegCardModule} from 'primeng/card';
 import {MenubarModule} from 'primeng/menubar';
 // importando el fieldList del PrimegNG
 import {FieldsetModule} from 'primeng/fieldset';
+// importando el ToolBar del PrimegNG
+import {ToolbarModule} from 'primeng/toolbar';
+// importando el Table del PrimegNG
+import {TableModule} from 'primeng/table';
 
 
 @NgModule({
@@ -15,7 +19,9 @@ import {FieldsetModule} from 'primeng/fieldset';
     primegButtonModule,
     primegCardModule,
     MenubarModule,
-    FieldsetModule
+    FieldsetModule,
+    ToolbarModule,
+    TableModule
   ]
 })
 export class PrimegExportsModule { }
